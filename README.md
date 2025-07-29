@@ -60,7 +60,10 @@ pdf-to-jpg -w 1500
 ## Requirements
 
 - Node.js
-- System dependencies (below)
+- System dependencies for PDF processing:
+  - **Poppler** - Provides `pdfinfo` command to read PDF dimensions and metadata
+  - **GraphicsMagick** - Image processing library for high-quality PDF to image conversion
+  - **Ghostscript** - PostScript and PDF interpreter required by GraphicsMagick for PDF rendering
 
 ### Installing System Dependencies
 
