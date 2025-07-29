@@ -1,0 +1,18 @@
+{
+  "name": "pdf-to-jpg-cli",
+  "version": "1.0.0",
+  "description": "CLI tool to convert all PDF files in a directory to JPG images",
+  "main": "index.js",
+  "bin": {
+    "pdf-to-jpg": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": ["pdf", "jpg", "convert", "cli"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "pdf2pic": "^2.1.4"
+  }
+}
