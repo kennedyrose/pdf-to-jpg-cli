@@ -1,17 +1,28 @@
 {
   "name": "pdf-to-jpg-cli",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "CLI tool to convert all PDF files in a directory to JPG images",
   "main": "index.js",
   "bin": {
-    "pdf-to-jpg": "./index.js"
+    "pdftojpg": "./index.js"
   },
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": ["pdf", "jpg", "convert", "cli"],
-  "author": "",
+  "keywords": ["pdf", "jpg", "jpeg", "convert", "converter", "cli", "command-line", "pdf-to-jpg", "image"],
+  "author": "ken85rose",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ken85rose/pdf-to-jpg-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ken85rose/pdf-to-jpg-cli/issues"
+  },
+  "homepage": "https://github.com/ken85rose/pdf-to-jpg-cli#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "dependencies": {
     "pdf2pic": "^2.1.4"
   }

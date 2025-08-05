@@ -1,21 +1,21 @@
 # PDF to JPG CLI
 
-A Node.js CLI tool that converts all PDF files in the current directory to high-quality JPG images with customizable maximum width. Useful for mass generating thumbnails.
+A Node.js command-line tool that converts all PDF files in the current directory to high-quality JPG images with customizable maximum width. Perfect for batch converting PDFs to images for thumbnails, previews, or web use.
 
 ## Installation
 
-1. Clone or download this project
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+Install globally from npm to use the `pdftojpg` command anywhere:
+
+```bash
+npm install -g pdf-to-jpg-cli
+```
 
 ## Usage
 
-Navigate to a directory containing PDF files and run:
+After global installation, navigate to any directory containing PDF files and run:
 
 ```bash
-node index.js [options]
+pdftojpg [options]
 ```
 
 ### Options
@@ -26,26 +26,36 @@ node index.js [options]
 ### Examples
 
 ```bash
-# Convert with default max width (1275px)
-node index.js
+# Convert all PDFs with default settings (max width: 1275px)
+pdftojpg
 
 # Convert with custom max width (800px)
-node index.js -w 800
+pdftojpg -w 800
 
 # Convert with custom max width (2000px)  
-node index.js --width 2000
+pdftojpg --width 2000
 
 # Show help
-node index.js --help
+pdftojpg --help
 ```
 
-### Global Installation
+## Development
 
-Install globally to use the `pdf-to-jpg` command:
+If you want to contribute or modify this tool:
 
 ```bash
+# Clone the repository
+git clone https://github.com/kennedyrose/pdf-to-jpg-cli.git
+cd pdf-to-jpg-cli
+
+# Install dependencies
+npm install
+
+# Run locally
+node index.js -w 1500
+
+# Or install globally from source
 npm install -g .
-pdf-to-jpg -w 1500
 ```
 
 ## Features
